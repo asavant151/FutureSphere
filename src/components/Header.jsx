@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { X } from "lucide-react";
+import { NavLink, useLocation } from "react-router-dom"; // Import NavLink and useLocation
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation(); // Get current location
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,6 +16,7 @@ const Header = () => {
     { href: "/blog", label: "Blogs" },
     { href: "/pricing", label: "Pricing" },
   ];
+
   return (
     <>
       <header className="container mx-auto mt-4 px-2">
@@ -28,12 +31,18 @@ const Header = () => {
             <ul className="flex items-center">
               {navItems.map((item) => (
                 <li key={item.href}>
-                  <a
-                    href={item.href}
-                    className="text-white text-base ml-4 hover:text-[#7F56D9] transition duration-300 ease-in-out"
+                  <NavLink
+                    to={item.href}
+                    className={({ isActive }) =>
+                      `text-base ml-4 transition duration-300 ease-in-out ${
+                        isActive
+                          ? "text-[#7F56D9]" // Active link color
+                          : "text-white hover:text-[#7F56D9]" // Default and hover color
+                      }`
+                    }
                   >
                     {item.label}
-                  </a>
+                  </NavLink>
                 </li>
               ))}
             </ul>
@@ -69,13 +78,19 @@ const Header = () => {
             <ul className="flex flex-col">
               {navItems.map((item) => (
                 <li key={item.href} className="border-b border-gray-700">
-                  <a
-                    href={item.href}
-                    className="block text-white text-base px-4 py-3 hover:bg-gray-700"
+                  <NavLink
+                    to={item.href}
+                    className={({ isActive }) =>
+                      `block text-base px-4 py-3 transition duration-300 ease-in-out ${
+                        isActive
+                          ? "text-[#7F56D9]" // Active link color
+                          : "text-white hover:text-[#7F56D9]" // Default and hover color
+                      }`
+                    }
                     onClick={toggleMenu}
                   >
                     {item.label}
-                  </a>
+                  </NavLink>
                 </li>
               ))}
             </ul>
