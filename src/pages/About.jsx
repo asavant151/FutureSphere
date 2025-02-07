@@ -1,4 +1,15 @@
 import React from "react";
+// images
+import HeroImageWrapper from "../../public/assets/about-hero-image-wrapper.png";
+import MissionImageWrapper from "../../public/assets/mission-image-wrapper.png";
+
+import CompanyLogo1 from "../../public/assets/company-logo-1.png";
+import CompanyLogo2 from "../../public/assets/company-logo-2.png";
+import CompanyLogo3 from "../../public/assets/company-logo-3.png";
+import CompanyLogo4 from "../../public/assets/company-logo-4.png";
+import CompanyLogo5 from "../../public/assets/company-logo-5.png";
+
+import mail from "../../public/assets/mail.svg";
 
 const About = () => {
   return (
@@ -26,7 +37,7 @@ const About = () => {
             </button>
           </div>
           <div className="flex justify-center md:mt-12 mt-4">
-            <img src="/assets/about-hero-image-wrapper.png" alt="hero" />
+            <img src={HeroImageWrapper} alt="hero" />
           </div>
         </section>
         {/* Our Story */}
@@ -57,7 +68,7 @@ const About = () => {
               </div>
               <div>
                 <img
-                  src="/assets/mission-image-wrapper.png"
+                  src={MissionImageWrapper}
                   alt="mission"
                   className="w-full object-cover rounded-4xl mt-5"
                 />
@@ -66,7 +77,7 @@ const About = () => {
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-12 items-center">
               <div className="lg:order-1 order-2">
                 <img
-                  src="/assets/mission-image-wrapper.png"
+                  src={MissionImageWrapper}
                   alt="mission"
                   className="w-full object-cover rounded-4xl mt-5"
                 />
@@ -110,19 +121,19 @@ const About = () => {
           </div>
           <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-4 mt-12">
             <div className="transform hover:scale-105 transition-transform duration-300">
-              <img src="/assets/company-logo-1.png" alt="company-logo-1" />
+              <img src={CompanyLogo1} alt="company-logo-1" />
             </div>
             <div className="transform hover:scale-105 transition-transform duration-300">
-              <img src="/assets/company-logo-2.png" alt="company-logo-2" />
+              <img src={CompanyLogo2} alt="company-logo-2" />
             </div>
             <div className="transform hover:scale-105 transition-transform duration-300">
-              <img src="/assets/company-logo-3.png" alt="company-logo-3" />
+              <img src={CompanyLogo3} alt="company-logo-3" />
             </div>
             <div className="transform hover:scale-105 transition-transform duration-300">
-              <img src="/assets/company-logo-4.png" alt="company-logo-4" />
+              <img src={CompanyLogo4} alt="company-logo-4" />
             </div>
             <div className="transform hover:scale-105 transition-transform duration-300">
-              <img src="/assets/company-logo-5.png" alt="company-logo-5" />
+              <img src={CompanyLogo5} alt="company-logo-5" />
             </div>
           </div>
         </section>
@@ -130,7 +141,7 @@ const About = () => {
         <section className="lg:my-[104px] md:my-[80px] my-[40px]">
           <div className="bg-[url(/assets/contact-bg.png)] bg-cover bg-center bg-no-repeat rounded-[24px] py-24">
             <div className="flex items-center justify-center">
-              <img src="/assets/mail.svg" alt="mail" className="w-12 h-12" />
+              <img src={mail} alt="mail" className="w-12 h-12" />
             </div>
             <div className="text-center">
               <h5 className="text-white lg:text-5xl md:text-4xl text-3xl mt-12">

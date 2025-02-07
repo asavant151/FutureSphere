@@ -4,6 +4,31 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+// images
+import HeroImageWrapper from "../../public/assets/hero-image-wrapper.png";
+import MissionImageWrapper from "../../public/assets/mission-image-wrapper.png";
+import ClientImageWrapper from "../../public/assets/client-Image.png";
+import BlogsFeaturedImage from "../../public/assets/blogs-featured-image.png";
+
+import Feature1 from "../../public/assets/feature-1.svg";
+import Feature2 from "../../public/assets/feature-2.svg";
+import Feature3 from "../../public/assets/feature-3.svg";
+
+import CompanyLogo1 from "../../public/assets/company-logo-1.png";
+import CompanyLogo2 from "../../public/assets/company-logo-2.png";
+import CompanyLogo3 from "../../public/assets/company-logo-3.png";
+import CompanyLogo4 from "../../public/assets/company-logo-4.png";
+import CompanyLogo5 from "../../public/assets/company-logo-5.png";
+
+import trusted1 from "../../public/assets/trusted-1.svg";
+import trusted2 from "../../public/assets/trusted-2.svg";
+import trusted3 from "../../public/assets/trusted-3.svg";
+import trusted4 from "../../public/assets/trusted-4.svg";
+import trusted5 from "../../public/assets/trusted-5.svg";
+
+import mail from "../../public/assets/mail.svg";
+
+import RightArrow from "../../public/assets/right-arrow.svg";
 
 const Home = () => {
   // State for the counting numbers
@@ -101,7 +126,7 @@ const Home = () => {
         </div>
         <div className="flex justify-center">
           <img
-            src="/assets/hero-image-wrapper.png"
+            src={HeroImageWrapper}
             alt="hero"
             className="md:mt-12 mt-4"
           />
@@ -152,7 +177,7 @@ const Home = () => {
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
             <div className="flex flex-col items-center text-center">
               <img
-                src="/assets/feature-1.svg"
+                src={Feature1}
                 alt="feature-1"
                 className="mb-4"
               />
@@ -167,7 +192,7 @@ const Home = () => {
             </div>
             <div className="flex flex-col items-center text-center">
               <img
-                src="/assets/feature-2.svg"
+                src={Feature2}
                 alt="feature-2"
                 className="mb-4"
               />
@@ -182,7 +207,7 @@ const Home = () => {
             </div>
             <div className="flex flex-col items-center text-center">
               <img
-                src="/assets/feature-3.svg"
+                src={Feature3}
                 alt="feature-3"
                 className="mb-4"
               />
@@ -202,7 +227,7 @@ const Home = () => {
             Contact Us
           </button>
           <button className="text-[#1B152B] bg-transparent text-base cursor-pointer flex items-center">
-            View All <img src="/assets/right-arrow.svg" alt="right-arrow" />
+            View All <img src={RightArrow} alt="right-arrow" />
           </button>
         </div>
       </section>
@@ -215,7 +240,7 @@ const Home = () => {
                 Our Mission Statement
               </span>
               <img
-                src="/assets/mission-image-wrapper.png"
+                src={MissionImageWrapper}
                 alt="mission"
                 className="w-full object-cover rounded-4xl lg:hidden block mt-5"
               />
@@ -266,19 +291,19 @@ const Home = () => {
         </div>
         <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-4 mt-12">
           <div className="transform hover:scale-105 transition-transform duration-300">
-            <img src="/assets/company-logo-1.png" alt="company-logo-1" />
+            <img src={CompanyLogo1} alt="company-logo-1" />
           </div>
           <div className="transform hover:scale-105 transition-transform duration-300">
-            <img src="/assets/company-logo-2.png" alt="company-logo-2" />
+            <img src={CompanyLogo2} alt="company-logo-2" />
           </div>
           <div className="transform hover:scale-105 transition-transform duration-300">
-            <img src="/assets/company-logo-3.png" alt="company-logo-3" />
+            <img src={CompanyLogo3} alt="company-logo-3" />
           </div>
           <div className="transform hover:scale-105 transition-transform duration-300">
-            <img src="/assets/company-logo-4.png" alt="company-logo-4" />
+            <img src={CompanyLogo4} alt="company-logo-4" />
           </div>
           <div className="transform hover:scale-105 transition-transform duration-300">
-            <img src="/assets/company-logo-5.png" alt="company-logo-5" />
+            <img src={CompanyLogo5} alt="company-logo-5" />
           </div>
         </div>
       </section>
@@ -332,7 +357,7 @@ const Home = () => {
             </div>
             <div>
               <img
-                src="/assets/mission-image-wrapper.png"
+                src={MissionImageWrapper}
                 alt="mission"
                 className="w-full object-cover rounded-4xl lg:block hidden"
               />
@@ -354,14 +379,14 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
             <div>
               <img
-                src="/assets/client-Image.png"
+                src={ClientImageWrapper}
                 alt="client"
                 className="w-full object-cover rounded-4xl lg:block hidden"
               />
             </div>
             <div>
               <img
-                src="/assets/client-Image.png"
+                src={ClientImageWrapper}
                 alt="client"
                 className="w-full object-cover rounded-4xl lg:hidden block mb-5"
               />
@@ -419,35 +444,35 @@ const Home = () => {
           <div className="transform hover:scale-105 transition-transform duration-300">
             <img
               className="h-8 md:h-10 lg:h-12"
-              src="/assets/trusted-1.svg"
+              src={trusted1}
               alt="Airwallex"
             />
           </div>
           <div className="transform hover:scale-105 transition-transform duration-300">
             <img
               className="h-8 md:h-10 lg:h-12"
-              src="/assets/trusted-2.svg"
+              src={trusted2}
               alt="Outreach"
             />
           </div>
           <div className="transform hover:scale-105 transition-transform duration-300">
             <img
               className="h-8 md:h-10 lg:h-12"
-              src="/assets/trusted-3.svg"
+              src={trusted3}
               alt="Razorpay"
             />
           </div>
           <div className="transform hover:scale-105 transition-transform duration-300">
             <img
               className="h-8 md:h-10 lg:h-12"
-              src="/assets/trusted-4.svg"
+              src={trusted4}
               alt="Discord"
             />
           </div>
           <div className="transform hover:scale-105 transition-transform duration-300">
             <img
               className="h-8 md:h-10 lg:h-12"
-              src="/assets/trusted-5.svg"
+              src={trusted5}
               alt="Dropbox"
             />
           </div>
@@ -467,7 +492,7 @@ const Home = () => {
           <div>
             <div className="bg-white border border-solid border-[#EEE2FE] rounded-[16px] p-5">
               <img
-                src="/assets/blogs-featured-image.png"
+                src={BlogsFeaturedImage}
                 alt="blog"
                 className="w-full object-cover rounded-[8px]"
               />
@@ -551,7 +576,7 @@ const Home = () => {
             Contact Us
           </button>
           <button className="text-[#1B152B] bg-transparent text-base cursor-pointer flex items-center">
-            View All <img src="/assets/right-arrow.svg" alt="right-arrow" />
+            View All <img src={RightArrow} alt="right-arrow" />
           </button>
         </div>
       </section>
@@ -559,7 +584,7 @@ const Home = () => {
       <section className="lg:my-[104px] md:my-[80px] my-[40px]">
         <div className="bg-[url(/assets/contact-bg.png)] bg-cover bg-center bg-no-repeat rounded-[24px] py-24">
           <div className="flex items-center justify-center">
-            <img src="/assets/mail.svg" alt="mail" className="w-12 h-12" />
+            <img src={mail} alt="mail" className="w-12 h-12" />
           </div>
           <div className="text-center">
             <h5 className="text-white lg:text-5xl md:text-4xl text-3xl mt-12">
