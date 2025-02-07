@@ -251,7 +251,7 @@ const Home = () => {
             </div>
             <div>
               <img
-                src="/assets/mission-image-wrapper.png"
+                src={MissionImageWrapper}
                 alt="mission"
                 className="w-full object-cover rounded-4xl lg:block hidden"
               />
@@ -301,7 +301,7 @@ const Home = () => {
                 Services
               </span>
               <img
-                src="/assets/mission-image-wrapper.png"
+                src={MissionImageWrapper}
                 alt="mission"
                 className="w-full object-cover rounded-4xl lg:hidden block mt-5"
               />
@@ -496,7 +496,7 @@ const Home = () => {
           <div>
             <div className="bg-white border border-solid border-[#EEE2FE] rounded-[16px] p-5">
               <img
-                src="/assets/blogs-featured-image.png"
+               src={BlogsFeaturedImage}
                 alt="blog"
                 className="w-full object-cover rounded-[8px]"
               />
@@ -523,7 +523,7 @@ const Home = () => {
           <div>
             <div className="bg-white border border-solid border-[#EEE2FE] rounded-[16px] p-5">
               <img
-                src="/assets/blogs-featured-image.png"
+                src={BlogsFeaturedImage}
                 alt="blog"
                 className="w-full object-cover rounded-[8px]"
               />
