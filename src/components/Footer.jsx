@@ -1,4 +1,7 @@
 import React from "react";
+import twitterIcon from "../assets/twitter.svg";
+import facebookIcon from "../assets/facebook.svg";
+import linkedinIcon from "../assets/linkedin.svg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -41,9 +44,9 @@ const Footer = () => {
             © {currentYear} FutureSphere. All rights reserved.
           </p>
           <div className="flex items-center md:mt-0 mt-4">
-            <img src="/assets/twitter.svg" alt="" className="mr-5" />
-            <img src="/assets/facebook.svg" alt="" className="mr-5" />
-            <img src="/assets/linkedin.svg" alt="" />
+            <img src={twitterIcon} alt="" className="mr-5" />
+            <img src={facebookIcon} alt="" className="mr-5" />
+            <img src={linkedinIcon} alt="" />
           </div>
         </div>
       </div>

@@ -1,15 +1,16 @@
 import React from "react";
 // images
-import HeroImageWrapper from "../../public/assets/about-hero-image-wrapper.png";
-import MissionImageWrapper from "../../public/assets/mission-image-wrapper.png";
+import HeroImageWrapper from "../assets/about-hero-image-wrapper.png";
+import MissionImageWrapper from "../assets/mission-image-wrapper.png";
+import ContactBgImage from "../assets/contact-bg.png";
 
-import CompanyLogo1 from "../../public/assets/company-logo-1.png";
-import CompanyLogo2 from "../../public/assets/company-logo-2.png";
-import CompanyLogo3 from "../../public/assets/company-logo-3.png";
-import CompanyLogo4 from "../../public/assets/company-logo-4.png";
-import CompanyLogo5 from "../../public/assets/company-logo-5.png";
+import CompanyLogo1 from "../assets/company-logo-1.png";
+import CompanyLogo2 from "../assets/company-logo-2.png";
+import CompanyLogo3 from "../assets/company-logo-3.png";
+import CompanyLogo4 from "../assets/company-logo-4.png";
+import CompanyLogo5 from "../assets/company-logo-5.png";
 
-import mail from "../../public/assets/mail.svg";
+import mail from "../assets/mail.svg";
 
 const About = () => {
   return (
@@ -139,7 +140,7 @@ const About = () => {
         </section>
         {/* Contact Us Section */}
         <section className="lg:my-[104px] md:my-[80px] my-[40px]">
-          <div className="bg-[url(/assets/contact-bg.png)] bg-cover bg-center bg-no-repeat rounded-[24px] py-24">
+          <div style={{ backgroundImage: `url(${ContactBgImage})` }} className="bg-cover bg-center bg-no-repeat rounded-[24px] py-24">
             <div className="flex items-center justify-center">
               <img src={mail} alt="mail" className="w-12 h-12" />
             </div>

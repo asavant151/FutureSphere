@@ -5,30 +5,31 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 // images
-import HeroImageWrapper from "../../public/assets/hero-image-wrapper.png";
-import MissionImageWrapper from "../../public/assets/mission-image-wrapper.png";
-import ClientImageWrapper from "../../public/assets/client-Image.png";
-import BlogsFeaturedImage from "../../public/assets/blogs-featured-image.png";
+import HeroImageWrapper from "../assets/hero-image-wrapper.png";
+import MissionImageWrapper from "../assets/mission-image-wrapper.png";
+import ClientImageWrapper from "../assets/client-Image.png";
+import BlogsFeaturedImage from "../assets/blogs-featured-image.png";
+import ContactBgImage from "../assets/contact-bg.png";
 
-import Feature1 from "../../public/assets/feature-1.svg";
-import Feature2 from "../../public/assets/feature-2.svg";
-import Feature3 from "../../public/assets/feature-3.svg";
+import Feature1 from "../assets/feature-1.svg";
+import Feature2 from "../assets/feature-2.svg";
+import Feature3 from "../assets/feature-3.svg";
 
-import CompanyLogo1 from "../../public/assets/company-logo-1.png";
-import CompanyLogo2 from "../../public/assets/company-logo-2.png";
-import CompanyLogo3 from "../../public/assets/company-logo-3.png";
-import CompanyLogo4 from "../../public/assets/company-logo-4.png";
-import CompanyLogo5 from "../../public/assets/company-logo-5.png";
+import CompanyLogo1 from "../assets/company-logo-1.png";
+import CompanyLogo2 from "../assets/company-logo-2.png";
+import CompanyLogo3 from "../assets/company-logo-3.png";
+import CompanyLogo4 from "../assets/company-logo-4.png";
+import CompanyLogo5 from "../assets/company-logo-5.png";
 
-import trusted1 from "../../public/assets/trusted-1.svg";
-import trusted2 from "../../public/assets/trusted-2.svg";
-import trusted3 from "../../public/assets/trusted-3.svg";
-import trusted4 from "../../public/assets/trusted-4.svg";
-import trusted5 from "../../public/assets/trusted-5.svg";
+import trusted1 from "../assets/trusted-1.svg";
+import trusted2 from "../assets/trusted-2.svg";
+import trusted3 from "../assets/trusted-3.svg";
+import trusted4 from "../assets/trusted-4.svg";
+import trusted5 from "../assets/trusted-5.svg";
 
-import mail from "../../public/assets/mail.svg";
+import mail from "../assets/mail.svg";
 
-import RightArrow from "../../public/assets/right-arrow.svg";
+import RightArrow from "../assets/right-arrow.svg";
 
 const Home = () => {
   // State for the counting numbers
@@ -125,11 +126,7 @@ const Home = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <img
-            src={HeroImageWrapper}
-            alt="hero"
-            className="md:mt-12 mt-4"
-          />
+          <img src={HeroImageWrapper} alt="hero" className="md:mt-12 mt-4" />
         </div>
         <div className="bg-white border border-solid border-[#EFF0F6] py-4 px-12 rounded-2xl shadow-md md:mt-12 mt-4">
           <div className="flex md:flex-row flex-col items-center justify-between">
@@ -176,11 +173,7 @@ const Home = () => {
         <div className="bg-white border border-solid border-[#EFF0F6] md:py-12 py-5 px-16 rounded-2xl shadow-md md:mt-12 mt-4">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
             <div className="flex flex-col items-center text-center">
-              <img
-                src={Feature1}
-                alt="feature-1"
-                className="mb-4"
-              />
+              <img src={Feature1} alt="feature-1" className="mb-4" />
               <h5 className="font-medium text-2xl text-[#1B152B] md:mb-6 mb-2">
                 Cutting-Edge Innovation
               </h5>
@@ -191,11 +184,7 @@ const Home = () => {
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
-              <img
-                src={Feature2}
-                alt="feature-2"
-                className="mb-4"
-              />
+              <img src={Feature2} alt="feature-2" className="mb-4" />
               <h5 className="font-medium text-2xl text-[#1B152B] md:mb-6 mb-2">
                 Seamless Connectivity
               </h5>
@@ -206,11 +195,7 @@ const Home = () => {
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
-              <img
-                src={Feature3}
-                alt="feature-3"
-                className="mb-4"
-              />
+              <img src={Feature3} alt="feature-3" className="mb-4" />
               <h5 className="font-medium text-2xl text-[#1B152B] md:mb-6 mb-2">
                 Intuitive User Interface
               </h5>
@@ -463,18 +448,10 @@ const Home = () => {
             />
           </div>
           <div className="transform hover:scale-105 transition-transform duration-300">
-            <img
-              className="h-8 md:h-10 lg:h-12"
-              src={trusted4}
-              alt="Discord"
-            />
+            <img className="h-8 md:h-10 lg:h-12" src={trusted4} alt="Discord" />
           </div>
           <div className="transform hover:scale-105 transition-transform duration-300">
-            <img
-              className="h-8 md:h-10 lg:h-12"
-              src={trusted5}
-              alt="Dropbox"
-            />
+            <img className="h-8 md:h-10 lg:h-12" src={trusted5} alt="Dropbox" />
           </div>
         </div>
       </section>
@@ -582,7 +559,7 @@ const Home = () => {
       </section>
       {/* Contact Us Section */}
       <section className="lg:my-[104px] md:my-[80px] my-[40px]">
-        <div className="bg-[url(/assets/contact-bg.png)] bg-cover bg-center bg-no-repeat rounded-[24px] py-24">
+        <div style={{ backgroundImage: `url(${ContactBgImage})` }} className="bg-cover bg-center bg-no-repeat rounded-[24px] py-24">
           <div className="flex items-center justify-center">
             <img src={mail} alt="mail" className="w-12 h-12" />
           </div>
@@ -596,19 +573,19 @@ const Home = () => {
             </p>
           </div>
           <div className="md:mt-12 mt-8 px-4 max-w-[600px] mx-auto">
-              <div className="relative md:flex md:items-center md:bg-white md:rounded-[12px] md:p-2">
-                <div className="flex items-center bg-white rounded-[12px] md:flex-1">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="w-full px-4 py-5 md:py-2 outline-none text-gray-700 bg-transparent"
-                  />
-                </div>
-                <button className="w-full md:w-auto mt-4 md:mt-0 bg-[#7F56D9] text-white px-8 py-4 md:py-3 rounded-[10px] hover:bg-[#6941C6] transition-colors">
-                  Subscribe to newsletter
-                </button>
+            <div className="relative md:flex md:items-center md:bg-white md:rounded-[12px] md:p-2">
+              <div className="flex items-center bg-white rounded-[12px] md:flex-1">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="w-full px-4 py-5 md:py-2 outline-none text-gray-700 bg-transparent"
+                />
               </div>
+              <button className="w-full md:w-auto mt-4 md:mt-0 bg-[#7F56D9] text-white px-8 py-4 md:py-3 rounded-[10px] hover:bg-[#6941C6] transition-colors">
+                Subscribe to newsletter
+              </button>
             </div>
+          </div>
         </div>
       </section>
     </div>
