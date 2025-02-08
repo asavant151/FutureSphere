@@ -324,7 +324,7 @@ const Home = () => {
                     </SwiperSlide>
                   ))}
                 </Swiper>
-                <div className="absolute right-4 z-10 flex space-x-2 md:mt-6 -mt-4">
+                <div className="absolute right-4 z-10 space-x-2 md:mt-6 -mt-4 md:flex hidden">
                   <button
                     onClick={() => swiperRef.current?.swiper.slidePrev()}
                     className="bg-transparent border border-solid border-[#7F56D9] p-3 rounded-full hover:bg-[#7F56D9] cursor-pointer transition duration-300"
@@ -397,7 +397,7 @@ const Home = () => {
                     </SwiperSlide>
                   ))}
                 </Swiper>
-                <div className="absolute right-4 bottom-0 z-10 flex space-x-2 md:mt-6 -mt-4">
+                <div className="absolute right-4 bottom-0 z-10 md:flex hidden space-x-2 md:mt-6 -mt-4">
                   <button
                     onClick={() => swiperRef2.current?.swiper.slidePrev()}
                     className="bg-transparent border border-solid border-[#7F56D9] p-3 rounded-full hover:bg-[#7F56D9] cursor-pointer transition duration-300"

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { X } from "lucide-react";
-import { NavLink, useLocation } from "react-router-dom"; // Import NavLink and useLocation
+import { NavLink, useLocation } from "react-router-dom";
+import BreadCrumbImage from "../assets/breadcrumb.svg"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation(); // Get current location
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -36,8 +37,8 @@ const Header = () => {
                     className={({ isActive }) =>
                       `text-base ml-4 transition duration-300 ease-in-out ${
                         isActive
-                          ? "text-[#7F56D9]" // Active link color
-                          : "text-white hover:text-[#7F56D9]" // Default and hover color
+                          ? "text-[#7F56D9]"
+                          : "text-white hover:text-[#7F56D9]"
                       }`
                     }
                   >
@@ -52,7 +53,7 @@ const Header = () => {
           </button>
           {/* Mobile Menu Button */}
           <button className="md:hidden text-white" onClick={toggleMenu}>
-            <img src="/assets/breadcrumb.svg" alt="" />
+            <img src={BreadCrumbImage} alt="" />
           </button>
         </div>
 
@@ -83,8 +84,8 @@ const Header = () => {
                     className={({ isActive }) =>
                       `block text-base px-4 py-3 transition duration-300 ease-in-out ${
                         isActive
-                          ? "text-[#7F56D9]" // Active link color
-                          : "text-white hover:text-[#7F56D9]" // Default and hover color
+                          ? "text-[#7F56D9]"
+                          : "text-white hover:text-[#7F56D9]"
                       }`
                     }
                     onClick={toggleMenu}
