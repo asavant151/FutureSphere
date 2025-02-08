@@ -120,7 +120,7 @@ const Home = () => {
             <button className="text-white bg-[#1B152B] hover:bg-[#9f7ee7] rounded-[20px] py-2 px-8 text-base cursor-pointer">
               Signup
             </button>
-            <button className="text-white bg-[#7f56d9] hover:bg-[#9f7ee7] rounded-[20px] py-2 px-8 text-base ml-4 cursor-pointer">
+            <button className="text-white bg-[#7f56d9] hover:bg-[#9581AE] rounded-[20px] py-2 px-8 text-base ml-4 cursor-pointer">
               Contact Us
             </button>
           </div>

@@ -48,7 +48,7 @@ const Header = () => {
               ))}
             </ul>
           </nav>
-          <button className="hidden md:block text-white bg-[#7f56d9] hover:bg-[#9f7ee7] rounded-[20px] py-2 px-8 text-base ml-2 cursor-pointer">
+          <button className="hidden md:block text-white bg-[#7f56d9] hover:bg-[#9581AE] rounded-[20px] py-2 px-8 text-base ml-2 cursor-pointer">
             Contact Us
           </button>
           {/* Mobile Menu Button */}
@@ -98,7 +98,7 @@ const Header = () => {
           </nav>
 
           <div className="px-4 mt-4">
-            <button className="w-full text-white bg-[#7F56D9] hover:bg-[#9f7ee7] rounded-[20px] py-2 px-8 text-base cursor-pointer">
+            <button className="w-full text-white bg-[#7F56D9] hover:bg-[#9581AE] rounded-[20px] py-2 px-8 text-base cursor-pointer">
               Contact Us
             </button>
           </div>
