@@ -128,7 +128,7 @@ const Home = () => {
         <div className="flex justify-center">
           <img src={HeroImageWrapper} alt="hero" className="md:mt-12 mt-4" />
         </div>
-        <div className="bg-white border border-solid border-[#EFF0F6] py-4 px-12 rounded-2xl shadow-md md:mt-12 mt-4">
+        <div className="bg-white border border-solid border-[#EFF0F6] py-4 md:px-12 px-4 rounded-2xl shadow-md md:mt-12 mt-4">
           <div className="flex md:flex-row flex-col items-center justify-between">
             <div className="flex flex-col items-center">
               <h3 className="text-[#7F56D9] font-semibold lg:text-5xl md:text-4xl text-lg md:mb-4 mb-2">
