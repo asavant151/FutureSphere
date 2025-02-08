@@ -1,6 +1,17 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
   font-family: "Inter", serif;
+}
+
+.team-swiper .swiper-slide {
+  transition: all 0.3s ease;
+  width: 192px;
+  z-index: 1;
+}
+
+.team-swiper .swiper-slide.swiper-slide-active {
+  z-index: 10;
+  width: 315px !important;
 }

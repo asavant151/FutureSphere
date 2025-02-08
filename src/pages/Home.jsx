@@ -170,7 +170,7 @@ const Home = () => {
             Unleash innovation and accelerate growth with our dynamic product.
           </p>
         </div>
-        <div className="bg-white border border-solid border-[#EFF0F6] md:py-12 py-5 px-16 rounded-2xl shadow-md md:mt-12 mt-4">
+        <div className="bg-white border border-solid border-[#EFF0F6] md:py-12 py-5 md:px-16 px-8 rounded-2xl shadow-md md:mt-12 mt-4">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
             <div className="flex flex-col items-center text-center">
               <img src={Feature1} alt="feature-1" className="mb-4" />
