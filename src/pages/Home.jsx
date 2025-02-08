@@ -134,7 +134,7 @@ const Home = () => {
               <h3 className="text-[#7F56D9] font-semibold lg:text-5xl md:text-4xl text-lg md:mb-4 mb-2">
                 {newUsersCount.toLocaleString()}K
               </h3>
-              <p className="text-[#7F56D9] text-[24px] md:mb-0 mb-4">
+              <p className="text-[#7F56D9] text-[24px] md:mb-0 mb-4 text-center">
                 New users per month
               </p>
             </div>
@@ -142,7 +142,7 @@ const Home = () => {
               <h3 className="text-[#7F56D9] font-semibold lg:text-5xl md:text-4xl text-lg md:mb-4 mb-2">
                 {activeUsersCount.toLocaleString()}K
               </h3>
-              <p className="text-[#7F56D9] text-[24px] md:mb-0 mb-4">
+              <p className="text-[#7F56D9] text-[24px] md:mb-0 mb-4 text-center">
                 Active Users
               </p>
             </div>
@@ -150,7 +150,7 @@ const Home = () => {
               <h3 className="text-[#7F56D9] font-semibold lg:text-5xl md:text-4xl text-lg md:mb-4 mb-2">
                 {satisfiedCustomersCount}%
               </h3>
-              <p className="text-[#7F56D9] text-[24px] md:mb-0 mb-4">
+              <p className="text-[#7F56D9] text-[24px] md:mb-0 mb-4 text-center">
                 Satisfied Customers
               </p>
             </div>
